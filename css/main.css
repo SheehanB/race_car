@@ -7,7 +7,7 @@
 body 
 {
 	background-color: #B9B9B9;
-  background-image: url('../images/mochaGrunge/mochaGrunge.png');
+  background-image: url('../images/real_cf/real_cf.png');
   background-repeat: repeat-x repeat-y;
   background-attachment: fixed;
 
@@ -41,37 +41,59 @@ body
 {
   display: inline;
   margin-right: 2em;
-  color: #CCCCCC;
 }
 
-#pageNavigation>ul>li:hover
+#pageNavigation>ul>li>a
 {
-  text-shadow: 0px 0px 2px #000000, 0px 0px 10px #000000;
+  text-decoration: none;
+  color: #CCCCCC;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+#pageNavigation>ul>li>a:hover
+{
+  text-shadow: 1px 0px 20px #FFFFFF;
+}
+
+#contentTitle
+{
+  margin-top: 0.2em;
+  width: 26.2em;
+  margin-left: auto;
+  margin-right: auto;
+  color: #CCCCCC;
+  font-family: 'Open Sans Condensed', serif;
+  font-size: 48px;
 }
 
 #pageContent
 {
-  margin-top: 4em;
-  margin-bottom: 3em;
-  text-indent: 13em;
-  width: 70em;
+  margin-top: 0.5em;
+  padding-left: 0.5em;
+  width: 69.5em;
   height: 40em;
   margin-left: auto;
   margin-right: auto;
-  background-color: #FFFFFF;
-  color: #333333;
+  background-color: #232323;
+  color: #CCCCCC;
   font-family: 'Open Sans', serif;
   font-size:18px;
+  word-wrap: break-word;
+  border: 1px black solid;
 }
 
-#contentImage
+#footer
 {
-  position: absolute;
-  width: 460px;
-  height: 460px;
-  margin-left: -4em;
-  margin-top: -7.5em;
-  margin-right: 3em;
-  background-image: url('../images/usq-logo.png');
-  background-repeat: no-repeat;
+  bottom: 0;
+  width: 70em;
+  height: 5em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Open Sans', serif;
+  font-size: 10px;
+  color: #CCCCCC;
 }
